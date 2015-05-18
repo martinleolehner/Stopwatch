@@ -1,0 +1,128 @@
+/*
+* A simple web browser based stopwatch.
+* Copyright (C) 2015  Martin Lehner
+*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	background-color: #ffffff;
+	color: #000000;
+}
+
+h1 {
+	font-size: 30px;
+	color: #000000;
+	font-weight: normal;
+}
+
+input[type=button] {
+	margin: 0 2px 2px 0;
+}
+
+
+#wrapper {
+	display: block;
+	width: 95%;
+	min-width: 400px;
+	max-width: 940px;
+	margin: 0 auto 0 auto;
+}
+
+	#controls {
+		vertical-align: middle;
+	}
+
+		#totalTime {
+			vertical-align: middle;
+			margin: 0 0 0 40px;
+			text-align: right;
+			font-size: 30px;
+			color: #000000;
+		}
+
+	#stopwatches {}
+
+		.stopwatch {
+			display: inline-block;
+			width: 285px;
+			margin: 2px 2px 2px 2px;
+			padding: 10px 10px 10px 10px;
+			border: 1px solid #4a5c68;
+			background-color: #ffffff;
+		}
+
+		.stopwatch.active {
+			background-color: #97F578;
+		}
+
+			.stopwatch ::-webkit-input-placeholder {
+				color:    #aaaaaa;
+			}
+			.stopwatch :-moz-placeholder {
+				color:    #aaaaaa;
+				opacity:  1;
+			}
+			.stopwatch ::-moz-placeholder {
+				color:    #aaaaaa;
+				opacity:  1;
+			}
+			.stopwatch :-ms-input-placeholder {
+				color:    #aaaaaa;
+			}
+
+			.title {
+				width: 100%;
+				margin: 0;
+				padding: 2px 2px 2px 2px;
+				border: 0;
+				border-radius: 2px;
+				background-color: inherit;
+				font-size: 24px;
+				color: #000000;
+			}
+
+			.active .title {
+				background-color: #97F578;
+			}
+
+			.description {
+				resize: none;
+				width: 100%;
+				margin: 2px 0 0 0;
+				padding: 2px 2px 2px 2px;
+				border: 0;
+				border-radius: 2px;
+				background-color: inherit;
+				font-family: Helvetica, Arial, sans-serif;
+				color: #aaaaaa;
+			}
+
+			.active .desctiption {
+				background-color: #97F578;
+			}
+
+			.time {
+				margin: 4px 0 6px 0;
+				padding: 0;
+				border: 0;
+				text-align: right;
+				font-size: 30px;
+				color: #000000;
+			}
